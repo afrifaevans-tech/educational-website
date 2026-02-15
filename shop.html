@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | EagleEye</title>
+    <title>Shop | EagleEye</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="navbar-top">
-                <a class="brand" href="index.html"><img src="img/logos/EagleEye.png" alt="Logo">EagleEye</a>
+                <a class="brand" href="index.html">EagleEye</a>
 
                 <nav class="desktop" aria-label="Primary navigation">
                     <ul class="nav-ul">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="shop.html">Shop</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Account</a></li>
@@ -28,8 +29,8 @@
             <div id="mobile-menu" class="mobile-nav" aria-hidden="true">
                 <nav aria-label="Mobile primary navigation">
                     <ul class="nav-ul">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="shop.html">Shop</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Account</a></li>
@@ -40,84 +41,81 @@
     </header>
 
     <main class="site-main">
-        <section class="hero" aria-label="Hero">
-            <video class="hero-video" autoplay muted loop playsinline poster="vid/vid card (1).jpg">
-                <source src="vid/Sauvage Eau Forte - TVC Complementary(720P_HD).mp4" type="video/mp4">
+       <section class="hero" aria-label="hero">
+            <video class="hero-video" autoplay muted loop playsinline poster="vid/vid card (2).jpg">
+                <source src="vid/NIVEA Radiant _ Beauty Advanced Care - For your shade of beautiful(720P_HD).mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="hero-dim" aria-hidden="true"></div>
             <div class="hero-overlay">
-                <h1 class="hero-title" style="color: yellow;">Discover EagleEye</h1>
-                <p style="margin-top:0.9rem"><a class="btn btn-primary" href="shop.html">Shop Now</a></p>
+            
             </div>
         </section>
-
-        <!-- Sliding images -->
-        <section id="slider">
-            <h4 style="text-align: center; padding: 2rem 2rem; margin: 0; font-size: 1.35rem; color: rgb(255, 255, 255); background: rgb(1, 39, 70);">New Arrivals</h5>
-                <div class="slider-container">
-                    <button class="nav-btn left" type="button" aria-label="Scroll left" 
-                    onclick="scrollSlider(-1)">&#10094;</button>
-                <div class="slider" id="productSlider">
-            <div class="product-card">
-                <a href="#"><img src="img/Cusmetics 1.jpg" alt="Brush Case 1"><br></a>
+            
+         <div style="max-width:1200px;margin:1.25rem auto 0 auto;padding:2rem 3rem;display:flex;justify-content:center;align-items:center;">
+                <form id="searchForm" class="mini-search" role="search">
+                    <input id="search-input" class="search-input" type="search" placeholder="Search products..." aria-label="Search">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+            <hr>
+        <!-- product section -->
+        <section id="items">
+            <div class="items-grid">
+                <div class="items-card">
+                    <a href="#"><img src="img/Cusmetics 1.jpg" alt="Brush Case 1"><br></a>
                 <h4>Multi Brushes</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Cusmetics 2.jpg" alt="Facial Brush"></a>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Cusmetics 2.jpg" alt="Facial Brush"></a>
                 <h4>Facial Brush</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">200.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Skin care 1.jpg" alt="Skin Care"></a>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Skin care 1.jpg" alt="Skin Care"></a>
                 <h4>Skin Care</h4><br></a>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">300.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Skin care 2.jpg" alt="Skin Care"></a>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Skin care 2.jpg" alt="Skin Care"></a>
                 <h4>Skin Care</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Cosmetics/Argan oil shampoo.jpg" alt="Argan oil shampoo"></a>
+                </div>
+                <div class="items-card">
+                   <a href="#"><img src="img/Cosmetics/Argan oil shampoo.jpg" alt="Argan oil shampoo"></a>
                 <h4>Argan oil shampoo"</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Pomades/Olaybact Kids & Teens Lotion .jpg" alt="Olaybact Kids & Teens Lotion"></a>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Pomades/Olaybact Kids & Teens Lotion .jpg" alt="Olaybact Kids & Teens Lotion"></a>
                 <h4>Olaybact Kids & Teens Lotion</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Pomades/Fair Child Yellow.jpg" alt="Fair Child Yellow"></a>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Pomades/Fair Child Yellow.jpg" alt="Fair Child Yellow"></a>
                 <h4>Fair Child Yellow</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">90.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Pomades/Fair Child Orange.jpg" alt="Fair Child Lotion"></a>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Sports Wear/Featured 2.jpg" alt="Footwear"></a>
+                    <h4>Eligance Wear</h4><br>
+                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">350.00</span></p><br>
+                    <button class="add-to-cart">Add to Bag</button>
+                </div>
+                <div class="items-card">
+                    <a href="#"><img src="img/Pomades/Fair Child Orange.jpg" alt="Fair Child Lotion"></a>
                 <h4>Fair Child Lotion</h4><br>
                 <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">90.00</span></p><br>
                 <button class="add-to-cart">Add to Bag</button>
-            </div>
-           
-            <button class="nav-btn right" type="button" aria-label="Scroll right" 
-            onclick="scrollSlider(1)">&#10095;</button>
-            </div>
-        </section>
-
-
-        <!-- product section -->
-        <section id="items">
-            <h4 style="text-align: center; padding: 2rem 2rem; margin: 0; font-size: 1.35rem; background-color: rgb(1, 39, 70); color: rgb(255, 255, 255);">Products Showcase</h4>
-            <div class="items-grid">
+                </div>
                 <div class="items-card">
                     <a href="#"><img src="img/Sports Wear/Featured 1.jpg" alt="Casual Footwear"></a>
                     <h4>Casual</h4><br>
@@ -131,57 +129,11 @@
                     <button class="add-to-cart">Add to Bag</button>
                 </div>
                 <div class="items-card">
-                    <a href="#"><img src="img/Sports Wear/Featured 2.jpg" alt="Footwear"></a>
-                    <h4>Eligance Wear</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">350.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Sports Wear/Laptop Apple (5).jpg" alt="Sports Wear"></a>
-                    <h4>Runner</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Cosmetics/DIOR Sauvage Shower Gel.jpg" alt="DIOR Sauvage"></a>
-                    <h4>DIOR Sauvage</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">200.00</span></p></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Storage/2Pcs Short Multi USB Charging Cable 3A  2.jpg" alt="Charger"></a>
-                    <h4>Multi USB Connector</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">150.00</span></p></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Cosmetics/Dove men +care.jpg" alt="Dove men +care"></a>
-                    <h4>Dove men +care</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                
-                <div class="items-card">
                     <a href="#"><img src="img/Storage/smart watch 9.jpg" alt="Watch"></a>
                     <h4>Smart Watch</h4><br>
                     <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">300.00</span></p></p><br>
                     <button class="add-to-cart">Add to Bag</button>
                 </div>
-                
-                <div class="items-card">
-                    <a href="#"><img src="img/Cosmetics/Dove men +care.jpg" alt="Dove men +care"></a>
-                    <h4>Dove men +care</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-
-                <div class="items-card">
-                    <a href="#"><img src="img/Storage/Flash Drives 7.jpg" alt="USB"></a>
-                    <h4>Flash Drives</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-
             </div>
         </section>
         <hr>
@@ -192,7 +144,7 @@
         <div class="footer-inner">
             <div class="footer-col">
                 <a class="brand" href="index.html"></a><br>
-                <p><strong style="color: #fff">EagleEye</strong><br>Quality products, fair prices, speedy delivery as eagle across Ghana.</p><br>
+                <p><strong>EagleEye</strong><br>Quality products, fair prices, fast local delivery across Ghana.</p><br>
                 <div class="newsletter">
                     <h4 style="margin-top:0.6rem">Subscribe</h4>
                     <form id="newsletterForm" class="newsletter-form" action="#" novalidate>
@@ -206,7 +158,7 @@
                 <h4>Customer Support</h4>
                 <ul class="footer-links">
                     <li><a href="help.html">Help Center</a></li>
-                    <li><a href="contact.html">Chat with us</a></li>
+                    <li><a href="#">Chat with us</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                     <li><a href="#">Delivery & Returns</a></li>
                 </ul>
@@ -243,7 +195,7 @@
                 <a href="www.x.com"><img src="img/logos/twitter.png" alt="Twitter"></a>
                 <a href="www.instagram.com"><img src="img/logos/instagram.png" alt="Instagram"></a>
             </div>
-            <div style="width:100%;text-align: center;color:#fff; margin-top:0.6rem" >&copy; 2026 Eagle eye. All rights reserved.</div>
+            <div style="width:100%;text-align: center;color:#fff; margin-top:0.6rem" >&copy; 2026 EagleEye. All rights reserved.</div>
         </div>
     </footer>
 
