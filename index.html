@@ -3,251 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | EagleEye</title>
+    <title>Home | Legacy Grafix</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar-top">
-                <a class="brand" href="index.html"><img src="img/logos/EagleEye.png" alt="Logo">EagleEye</a>
 
-                <nav class="desktop" aria-label="Primary navigation">
-                    <ul class="nav-ul">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Account</a></li>
-                    </ul>
-                </nav>
+    <nav>
+        <a class="logo" href="index.html">LEGACY <span style="color: white;">GRAFIX</span></a>
+        
+        <ul class="nav-links">
+            <a class="nav-links active" href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Account</a>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-                <label class="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">☰</label>
+    <section class="header">
+        <h1>Digital Excellence</h1>
+        <p>IT Support, Web Architecture, and Brand Design for the modern era.</p>
+        <a class="cta-btn" href="services.html">View All Services</a>
+    </section>
+
+    <section class="services-section">
+        <h2 class="section-title">Our Featured Solutions</h2>
+        
+        <div class="product-grid">
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMG/Digital & IT.jpg" alt="IT Services">
+                </div>
+                <div class="product-info">
+                    <h3>Digital & IT</h3>
+                    <p>Strategic IT support and online tool setup for seamless business operations.</p>
+                    <a href="services.html" class="learn-more">Details &rarr;</a>
+                </div>
             </div>
 
-            <div id="mobile-menu" class="mobile-nav" aria-hidden="true">
-                <nav aria-label="Mobile primary navigation">
-                    <ul class="nav-ul">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Account</a></li>
-                    </ul>
-                </nav>
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMG/Web Design.jpg" alt="Web Design">
+                </div>
+                <div class="product-info">
+                    <h3>Web Design</h3>
+                    <p>Modern, responsive website design with automated maintenance systems.</p>
+                    <a href="services.html" class="learn-more">Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMG/Email Profiles.jpg" alt="Profiles">
+                </div>
+                <div class="product-info">
+                    <h3>Email Profiles</h3>
+                    <p>Professional email setup and business profile management for better reach.</p>
+                    <a href="services.html" class="learn-more">Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMG/Graphics design.jpg" alt="Graphic Design">
+                </div>
+                <div class="product-info">
+                    <h3>Graphic Design</h3>
+                    <p>Elite visual branding and graphic assets to set your brand apart.</p>
+                    <a href="services.html" class="learn-more">Details &rarr;</a>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="site-main">
-        <section class="hero" aria-label="Hero">
-            <video class="hero-video" autoplay muted loop playsinline poster="vid/vid card (1).jpg">
-                <source src="vid/bg video ecommerce - Made with Clipchamp.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-dim" aria-hidden="true"></div>
-            <div class="hero-overlay">
-                <h1 class="hero-title" style="color: yellow;">Discover EagleEye</h1>
-                <p style="margin-top:0.9rem"><a class="btn btn-primary" href="shop.html">Shop Now</a></p>
-            </div>
-        </section>
-
-        <!-- Sliding images -->
-        <section id="slider">
-            <h4 style="text-align: center; padding: 2rem 2rem; margin: 0; font-size: 1.35rem; color: rgb(255, 255, 255); background: rgb(1, 39, 70);">New Arrivals</h5>
-                <div class="slider-container">
-                    <button class="nav-btn left" type="button" aria-label="Scroll left" 
-                    onclick="scrollSlider(-1)">&#10094;</button>
-                <div class="slider" id="productSlider">
-            <div class="product-card">
-                <a href="#"><img src="img/Cusmetics 1.jpg" alt="Brush Case 1"><br></a>
-                <h4>Multi Brushes</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Cusmetics 2.jpg" alt="Facial Brush"></a>
-                <h4>Facial Brush</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">200.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Skin care 1.jpg" alt="Skin Care"></a>
-                <h4>Skin Care</h4><br></a>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">300.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Skin care 2.jpg" alt="Skin Care"></a>
-                <h4>Skin Care</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Cosmetics/Argan oil shampoo.jpg" alt="Argan oil shampoo"></a>
-                <h4>Argan oil shampoo"</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Pomades/Olaybact Kids & Teens Lotion .jpg" alt="Olaybact Kids & Teens Lotion"></a>
-                <h4>Olaybact Kids & Teens Lotion</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Pomades/Fair Child Yellow.jpg" alt="Fair Child Yellow"></a>
-                <h4>Fair Child Yellow</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">90.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-            <div class="product-card">
-                <a href="#"><img src="img/Pomades/Fair Child Orange.jpg" alt="Fair Child Lotion"></a>
-                <h4>Fair Child Lotion</h4><br>
-                <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">90.00</span></p><br>
-                <button class="add-to-cart">Add to Bag</button>
-            </div>
-           
-            <button class="nav-btn right" type="button" aria-label="Scroll right" 
-            onclick="scrollSlider(1)">&#10095;</button>
-            </div>
-        </section>
-
-
-        <!-- product section -->
-        <section id="items">
-            <h4 style="text-align: center; padding: 2rem 2rem; margin: 0; font-size: 1.35rem; background-color: rgb(1, 39, 70); color: rgb(255, 255, 255);">Products Showcase</h4>
-            <div class="items-grid">
-                <div class="items-card">
-                    <a href="#"><img src="img/Sports Wear/Featured 1.jpg" alt="Casual Footwear"></a>
-                    <h4>Casual</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">450.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Brush 1.jpg" alt="Brush"></a>
-                    <h4>Caro White</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Sports Wear/Featured 2.jpg" alt="Footwear"></a>
-                    <h4>Eligance Wear</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">350.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Sports Wear/Laptop Apple (5).jpg" alt="Sports Wear"></a>
-                    <h4>Runner</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Cosmetics/DIOR Sauvage Shower Gel.jpg" alt="DIOR Sauvage"></a>
-                    <h4>DIOR Sauvage</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">200.00</span></p></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Storage/2Pcs Short Multi USB Charging Cable 3A  2.jpg" alt="Charger"></a>
-                    <h4>Multi USB Connector</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">150.00</span></p></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                <div class="items-card">
-                    <a href="#"><img src="img/Cosmetics/Dove men +care.jpg" alt="Dove men +care"></a>
-                    <h4>Dove men +care</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                
-                <div class="items-card">
-                    <a href="#"><img src="img/Storage/smart watch 9.jpg" alt="Watch"></a>
-                    <h4>Smart Watch</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">300.00</span></p></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-                
-                <div class="items-card">
-                    <a href="#"><img src="img/Cosmetics/Dove men +care.jpg" alt="Dove men +care"></a>
-                    <h4>Dove men +care</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">250.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-
-                <div class="items-card">
-                    <a href="#"><img src="img/Storage/Flash Drives 7.jpg" alt="USB"></a>
-                    <h4>Flash Drives</h4><br>
-                    <p>GH&#8373; <span style="color: tomato; font-size: 1rem; font-weight: bold;">100.00</span></p><br>
-                    <button class="add-to-cart">Add to Bag</button>
-                </div>
-
-            </div>
-        </section>
-        <hr>
-    </main>
-
-    <!-- footer -->
-    <footer class="site-footer">
-        <div class="footer-inner">
+    <footer>
+        <div class="footer-grid">
             <div class="footer-col">
-                <a class="brand" href="index.html"></a><br>
-                <p><strong style="color: #fff">EagleEye</strong><br>Quality products, fair prices, speedy delivery as eagle across Ghana.</p><br>
-                <div class="newsletter">
-                    <h4 style="margin-top:0.6rem">Subscribe</h4>
-                    <form id="newsletterForm" class="newsletter-form" action="#" novalidate>
-                        <input id="newsletterEmail" type="email" placeholder="Your email address" aria-label="Email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <small id="newsletterMsg" style="display:none;color:#9aa4b2;margin-top:0.4rem;"></small>
-                </div>
+                <h4 style="color: white;">LEGACY GRAFIX</h4>
+                <p>The standard in digital services.</p>
             </div>
             <div class="footer-col">
-                <h4>Customer Support</h4>
-                <ul class="footer-links">
-                    <li><a href="help.html">Help Center</a></li>
-                    <li><a href="contact.html">Chat with us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="#">Delivery & Returns</a></li>
-                </ul>
+                <h4>Sitemap</h4>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-col">
-                <h4>Useful Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#">How to buy</a></li>
-                    <li><a href="#">Service Centers</a></li>
-                    <li><a href="#">Corporate & Bulk</a></li>
-                    <li><a href="#">Report a Product</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Sell With Us</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Sell on Vivian Beauty Cosmetics</a></li>
-                    <li><a href="#">Vendor Hub</a></li>
-                    <li><a href="#">Service Charges</a></li>
-                </ul>
+                <h4>Contact</h4>
+                <p>&#9743; +233552734490</p>
+                <p>&#9993; afrifaevans95@gmail.com</p>
+                <p>&#128681; Madina, Accra</p>
             </div>
         </div>
-
-        <div class="container footer-bottom">
-            <div class="payments">
-                <small style="color:#fff;margin-right:0.5rem">Payment methods:</small>
-                <img src="img/logos/visa.jpg" alt="Visa" style="height:22px;opacity:0.95;">
-                <img src="img/logos/mastercard.png" alt="Mastercard" style="height:22px;opacity:0.95;">
-                <img src="img/logos/momo.jpeg" alt="Mobile Money" style="height:22px;opacity:0.95;">
-            </div>
-            <div class="socials">
-                <small style="color:#fff;margin-right:0.5rem">Follow us:</small>
-                <a href="www.facebook.com"><img src="img/logos/facebook.png" alt="Facebook"></a>
-                <a href="www.x.com"><img src="img/logos/twitter.png" alt="Twitter"></a>
-                <a href="www.instagram.com"><img src="img/logos/instagram.png" alt="Instagram"></a>
-            </div>
-            <div style="width:100%;text-align: center;color:#fff; margin-top:0.6rem" >&copy; 2026 Eagle eye. All rights reserved.</div>
-        </div>
+        <div class="footer-bottom"> &copy; Lagacy Grafix. All rights reserved.</div>
     </footer>
 
-    <script src="scripts.js"></script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
